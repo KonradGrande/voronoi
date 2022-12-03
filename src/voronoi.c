@@ -111,8 +111,8 @@ void draw_vonoroi(image_t *img, point_t *points, int num_points,
     }
 }
 
-int main(int argc, char *argv[]) {
-  char *path = "vonoroi.ppm";
+int main() {
+  char *path = "voronoi.ppm";
   int width = 1920;
   int height = 1080;
   int num_points = 100;

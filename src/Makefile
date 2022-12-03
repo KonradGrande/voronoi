@@ -1,14 +1,14 @@
 CC = gcc
 CFLAGS = -ggdb -fopenmp
 
-vonoroi.ppm: vonoroi
-	./vonoroi
+voronoi.ppm: voronoi
+	./voronoi
 
-vonoroi: vonoroi.c ppm/ppm.o
+voronoi: voronoi.c ppm/ppm.o
 
 ppm/ppm.o: ppm/ppm.c
 	$(MAKE) -C ppm
 
 clean:
-	-rm	vonoroi vonoroi.ppm
+	-rm	voronoi voronoi.ppm
 	$(MAKE) -C ppm clean
